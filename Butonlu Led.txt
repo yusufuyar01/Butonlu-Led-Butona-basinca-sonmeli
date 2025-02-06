@@ -1,0 +1,28 @@
+
+int led=9;//9. pine bağlı olan "led"i tanımladık.
+int buton=8;//8. pine bağlı olan "buton"u tanımladık.
+int butonDurumu=0;//Butonun açık olup olmadığını belirten "butonDEgeri"ni tanımladık. 
+
+void setup() {
+  pinMode(buton,INPUT);//Buton(8.) pininden girişin olduğunu belirtti.
+  pinMode(led,OUTPUT);//Led(9.) pininden çıkışın olduğunu belirttik.
+
+}
+
+void loop() {
+  butonDurumu=digitalRead(buton);//Butonun açık olup olmadığını kontrol edip değeri butonDEger'ine atadık.
+  
+  if(butonDurumu==1){//butonDurumu=1 (butona basıldığında) koşulu sağlandığında izlenecek yolu "if" ile belirledik.
+    
+    digitalWrite(led,LOW);//ledin kapalı kalması komutunu verdik.
+    
+    }
+
+  else{//butonDurumu=1 koşulu sağlanmadığında(butona basılmadığında) izlenecek yolu"else" ile belirledik.
+    
+    digitalWrite(led,HIGH);//ledin açık kalması komutunu verdik.
+    
+    }
+
+  
+}
