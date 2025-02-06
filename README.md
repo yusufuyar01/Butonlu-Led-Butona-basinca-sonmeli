@@ -33,6 +33,7 @@ Bu proje, Arduino platformunda geliştirilmiş basit bir uygulamadır. Bir buton
     - Butonun bir bacağını 8. pine bağlayın.
     - Butonun diğer bacağını GND'ye bir 10k ohm direnç üzerinden bağlayın.
     - Butonun bir bacağını 5V'ye bağlayın.
+    ![Image](https://github.com/user-attachments/assets/f59b0d54-552c-4439-8264-e6aeeab7d3fd)
 4. Arduino IDE'de doğru kartı ve portu seçin.
 5. Aşağıdaki kodu Arduino IDE'ye kopyalayın ve yükleyin.
 
